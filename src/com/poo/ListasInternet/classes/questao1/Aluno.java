@@ -1,6 +1,4 @@
-package Listas.classes.questao1;
-
-import java.util.ArrayList;
+package com.poo.ListasInternet.classes.questao1;
 
 public class Aluno {
     //dados do aluno: matrícula, nome, 2 notas de prova e 1 nota de

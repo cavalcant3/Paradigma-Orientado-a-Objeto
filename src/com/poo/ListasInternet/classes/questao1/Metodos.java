@@ -1,6 +1,4 @@
-package Listas.classes.questao1;
-
-import java.util.ArrayList;
+package com.poo.ListasInternet.classes.questao1;
 
 public class Metodos {
 //media calcula a média final do aluno (cada prova tem peso 2,5 e o trabalho tem peso 2)

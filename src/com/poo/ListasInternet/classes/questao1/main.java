@@ -1,6 +1,4 @@
-package Listas.classes.questao1;
-
-import java.util.ArrayList;
+package com.poo.ListasInternet.classes.questao1;
 
 public class main {
     public static void main(String[] args) {
