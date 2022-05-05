@@ -18,23 +18,22 @@ public class Conta {
     }
 
     //    não permite depositos acima de 1000
-    public boolean depositar(double valor) {
-        String resultadoDeposito;
+    public boolean depositar(double valorDeposito) {
 
-        if (valor > 1000) {
+        if (valorDeposito > 1000) {
             return false;
         } else {
-            this.saldo += valor;
+            this.saldo += valorDeposito;
             return true;
         }
     }
 
     //Um método sacar com verificação
-    public boolean saque(double valor) {
-        if (valor > this.saldo) {
+    public boolean saque(double valorSaque) {
+        if (valorSaque > this.saldo) {
             return false;
         } else {
-            this.saldo += valor;
+            this.saldo = this.saldo - valorSaque;
             return true;
         }
     }
