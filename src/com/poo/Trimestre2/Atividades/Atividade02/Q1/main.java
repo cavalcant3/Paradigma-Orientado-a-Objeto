@@ -15,21 +15,27 @@ public class main {
 
 
 //        observe que ao instanciar a classe ônibus devo fornecer os atributos:
-        Onibus onibus = new Onibus("0000",2001);
-        System.out.println("-- Informações sobre o onibus: --");
+        Onibus onibus = new Onibus("0000",2001, 20000);
+//        System.out.println("-- Informações sobre o onibus: --");
         onibus.setNumAssentos("40");
-
-        System.out.println(onibus.mostrarDados());
+//
+//        System.out.println(((Onibus) onibus).mostrarDados());
 
 
 //        dados do caminhão:
-        Caminhao caminhao = new Caminhao("0f30",1999);
+        Caminhao caminhao = new Caminhao("0f30",1999,250000);
+
         caminhao.setCarga("tijolos");
         caminhao.setNumExos(6);
         caminhao.setPesoMax(1000);
-        System.out.println("-- Informações sobre o caminhao: --");
-        System.out.println(caminhao.mostrarDados());
+//        System.out.println("-- Informações sobre o caminhao: --");
+//        System.out.println(((Caminhao) caminhao).mostrarDados());
 
+        System.out.println("-- Informações sobre polimorfismo: --");
+        System.out.println("-- Informações sobre o caminhao: --");
+        System.out.println(caminhao.getInfo());
+        System.out.println("-- Informações sobre o onibus: --");
+        System.out.println(onibus.getInfo());
 
 
     }
