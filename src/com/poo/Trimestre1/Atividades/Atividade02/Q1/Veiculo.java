@@ -16,7 +16,7 @@ public class Veiculo {
     private double motor;
     private double velocidade;
 
-//    constructor
+    //    constructor
     public Veiculo(String nome, String marca) {
         this.nome = nome;
         this.marca = marca;
@@ -25,11 +25,13 @@ public class Veiculo {
         this.numMarchas = 5;
         this.velocidade = 50.0;
     }
+
     public String acelerar(double incremento) {
         this.velocidade = this.velocidade + incremento;
         String acelerando = "Aumentando a velocidade";
         return acelerando;
     }
+
 
     public String frear(double decremento) {
         this.velocidade = this.velocidade - decremento;
