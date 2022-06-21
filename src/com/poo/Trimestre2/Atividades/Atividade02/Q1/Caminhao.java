@@ -1,6 +1,6 @@
 package com.poo.Trimestre2.Atividades.Atividade02.Q1;
 
-public class Caminhao extends Veiculo implements Tributavel{
+public class Caminhao extends Veiculo{
     int numExos;
     double pesoMax;
     String carga;
@@ -10,7 +10,9 @@ public class Caminhao extends Veiculo implements Tributavel{
         dados = "\nNumero de eixos: " + this.numExos;
         dados += "\n Peso Max.: " + this.pesoMax;
         dados += "\n carga: " + this.carga;
-        dados += "\n Valor do tributo: " + this.getImposto();
+       // dados += "\n placa: " + this.placa;
+       // dados += "\n ano: " + this.ano;
+
 
         return dados;
     }
@@ -44,15 +46,11 @@ public class Caminhao extends Veiculo implements Tributavel{
         this.carga = carga;
     }
 
-    public Caminhao(String placa, int ano, double Valor) {
-        super(placa, ano, Valor);
+    public Caminhao(String placa, int ano) {
+        super(placa, ano);
 
 
     }
 
-    @Override
-    public double getImposto() {
-        return this.Valor * 0.25;
 
-    }
 }

@@ -13,30 +13,15 @@ public class main {
 //- crie uma classe para testar as classes criadas;
 //- lembre-se de usar abstract quando for o caso;
 
-
-//        observe que ao instanciar a classe ônibus devo fornecer os atributos:
-        Onibus onibus = new Onibus("0000",2001, 20000);
-//        System.out.println("-- Informações sobre o onibus: --");
-        onibus.setNumAssentos("40");
-//
-//        System.out.println(((Onibus) onibus).mostrarDados());
-
-
-//        dados do caminhão:
-        Caminhao caminhao = new Caminhao("0f30",1999,250000);
-
-        caminhao.setCarga("tijolos");
+        Onibus onibus = new Onibus("eof1414", 2001);
+        onibus.setNumAssentos(60);
+        Caminhao caminhao = new Caminhao("eoe555", 1970);
+        caminhao.setPesoMax(2500);
         caminhao.setNumExos(6);
-        caminhao.setPesoMax(1000);
-//        System.out.println("-- Informações sobre o caminhao: --");
-//        System.out.println(((Caminhao) caminhao).mostrarDados());
-
-        System.out.println("-- Informações sobre polimorfismo: --");
-        System.out.println("-- Informações sobre o caminhao: --");
+        caminhao.setCarga("aves");
+        System.out.println("----info. sobre o caminhão:------");
         System.out.println(caminhao.getInfo());
-        System.out.println("-- Informações sobre o onibus: --");
+        System.out.println("----info. sobre o onibus:------");
         System.out.println(onibus.getInfo());
-
-
     }
 }
