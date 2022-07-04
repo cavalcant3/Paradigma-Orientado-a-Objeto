@@ -6,8 +6,8 @@ public class Futebol extends JogoComBola {
 
     @Override
     public void setNomesEquipes(String equipe1, String equipe2) {
-        equipe1 = this.equipe1;
-        equipe2 = this.equipe2;
+        this.equipe1 = equipe1;
+        this.equipe2 =equipe2;
     }
 
 
@@ -29,5 +29,21 @@ public class Futebol extends JogoComBola {
         String message = "Jogo finalizado\n";
 
         return message;
+    }
+
+    public String getEquipe2() {
+        return equipe2;
+    }
+
+    public void setEquipe2(String equipe2) {
+        this.equipe2 = equipe2;
+    }
+
+    public String getEquipe1() {
+        return equipe1;
+    }
+
+    public void setEquipe1(String equipe1) {
+        this.equipe1 = equipe1;
     }
 }

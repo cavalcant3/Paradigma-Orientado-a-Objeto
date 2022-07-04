@@ -31,6 +31,12 @@ public class main {
         System.out.println(futebol.iniciar());
         System.out.println(futebol.jogar());
         System.out.println(futebol.finalizar());
+        futebol.setNomesEquipes("neymar do cangaço,\n Breno perna de pau,\n lampiao,\n",
+                "Chico filho de antonia,\n Dell caçador,\n o cantor de unha pintada");
+        System.out.println("Equipes da copa boa vista do urubu:\n");
+        System.out.println(futebol.getEquipe1());
+        System.out.println(futebol.getEquipe2());
+
         System.out.println("--truco--");
         Truco truco = new Truco();
         System.out.println("--iniciando o jogo--");
@@ -39,9 +45,18 @@ public class main {
         System.out.println(truco.numeroParticipantes(10));
         System.out.println(truco.jogar());
         System.out.println(truco.finalizar());
-
         System.out.println("--pegando numero aleatório de cartas:--");
         System.out.println(truco.qtdCartasDistribuidas());
 
+        System.out.println("--volei--");
+        Volei volei = new Volei();
+        volei.setNomesEquipes("Bruninho arrocha,\nDeivinho novaes,\nProfessor Telmo\n"
+                ,"Aluisinho do brega,\n Bruno Do bar risca faca\n, toninho braço de ferro");
+        System.out.println("Equipes da copa boa vista do urubu: \n");
+        System.out.println(volei.equipe1);
+        System.out.println(volei.equipe2);
+        System.out.println(volei.iniciar());
+        System.out.println(volei.jogar());
+        System.out.println(volei.finalizar());
     }
 }
