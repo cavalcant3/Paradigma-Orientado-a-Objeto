@@ -10,7 +10,7 @@ public class Conveniado extends Paciente {
     }
 
     @Override
-    public void agendarConsulta(String nomeEspecialidade, int númeroConvênio, String nomeConvênio) {
-        super.agendarConsulta(nomeEspecialidade, númeroConvênio, nomeConvênio);
+    public String agendarConsulta(String nomeEspecialidade, int númeroConvênio, String nomeConvênio) {
+        return super.agendarConsulta(nomeEspecialidade, númeroConvênio, nomeConvênio);
     }
 }
