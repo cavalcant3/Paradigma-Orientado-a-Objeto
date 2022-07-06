@@ -1,6 +1,5 @@
 package com.poo.Trimestre2.Atividades.Atividade03.Q1;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -36,10 +35,10 @@ public class main {
                 System.out.println("---------------------------------------------");
 //            caso não seja par então é criado objetos conveniados
             } else {
-                for (int i = 2; i < 4; i++) {
-                    Conveniado conveniado = new Conveniado(usuarios.get(i));
+
+                    Conveniado conveniado = new Conveniado(usuarios.get(x));
                     int z = 1;
-                    System.out.println(conveniado.agendarConsulta(especialidades.get(i),
+                    System.out.println(conveniado.agendarConsulta(especialidades.get(x),
                             "UNIMED"));
 
 
@@ -47,7 +46,7 @@ public class main {
                             conveniado.agendarConsulta(especialidades.get(z),""));
                     z++;
                     System.out.println("---------------------------------------------");
-                }
+
             }
         }
 
