@@ -13,12 +13,10 @@ public abstract class Paciente {
     }
 
 
-
-
     public abstract String agendarConsulta(String nomeEspecialidade, String nomeConvenio);
 
 
-
+// calculo do numero aleatório
     public  int randBetween(int start, int end) {
         return start + (int) Math.round(Math.random() * (end - start));
     }

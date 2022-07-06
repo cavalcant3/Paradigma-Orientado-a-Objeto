@@ -29,31 +29,6 @@ public class NaoConveniado extends Paciente {
 
 
 
-//
-//    @Override
-//    public String agendarConsulta(String nomeEspecialidade, String nomeConvenio) {
-//        return super.agendarConsulta(this.nomeEspecialidade, this.nomeConvenio);
-//    }
-//
-//    @Override
-//    public String agendarConsulta(String nomeEspecialidade, int numeroConvenio, String nomeConvenio) {
-//        return super.agendarConsulta(nomeEspecialidade, numeroConvenio, nomeConvenio);
-//    }
-//
-//    public int getNumCartãoCrédito() {
-//        return numCartãoCrédito;
-//    }
-//
-//    public void setNumCartãoCrédito(int numCartãoCrédito) {
-//        this.numCartãoCrédito = numCartãoCrédito;
-//    }
-//
-//    public String getBandeiraCartãoCrédito() {
-//        return bandeiraCartãoCrédito;
-//    }
-//
-//    public void setBandeiraCartãoCrédito(String bandeiraCartãoCrédito) {
-//        this.bandeiraCartãoCrédito = bandeiraCartãoCrédito;
-//    }
+
 
 }

@@ -12,7 +12,6 @@ public class Conveniado extends Paciente {
         this.nome = nome;
     }
 
-//    Acrescentar nome e convenio
 
 
     @Override
@@ -22,7 +21,7 @@ public class Conveniado extends Paciente {
         gc.set(gc.YEAR, ano);
         int diaDoAno = randBetween(1, gc.getActualMaximum(gc.DAY_OF_YEAR));
         gc.set(gc.DAY_OF_YEAR, diaDoAno);
-        String data = "PACIENTE: " +nome + " - ";
+        String data = "PACIENTE: " +nome + " - " + nomeConvenio + "\n ";
         data +=  nomeEspecialidade + " - ";
         data += gc.get(gc.DAY_OF_MONTH) + "/" + (gc.get(gc.MONTH) + 1) + "/" + (gc.get(gc.YEAR));
         return data;
