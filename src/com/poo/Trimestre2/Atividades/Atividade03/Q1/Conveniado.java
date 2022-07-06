@@ -4,6 +4,10 @@ public class Conveniado extends Paciente {
     int númeroConvênio;
     String nomeConvênio;
 
+    public Conveniado(String nome) {
+        super(nome);
+    }
+
     @Override
     public String print() {
         return super.print();
@@ -12,5 +16,10 @@ public class Conveniado extends Paciente {
     @Override
     public String agendarConsulta(String nomeEspecialidade, int númeroConvênio, String nomeConvênio) {
         return super.agendarConsulta(nomeEspecialidade, númeroConvênio, nomeConvênio);
+    }
+
+    @Override
+    public String agendarConsulta(String nomeEspecialidade, String nomeConvênio) {
+        return super.agendarConsulta(nomeEspecialidade, nomeConvênio);
     }
 }
