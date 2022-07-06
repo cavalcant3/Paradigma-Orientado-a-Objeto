@@ -3,7 +3,6 @@ package com.poo.Trimestre2.Atividades.Atividade03.Q1;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
@@ -19,34 +18,50 @@ public class main {
 //PACIENTE: ANA PAULA SÁ DA SILVA - SEM CONVÊNIO
 //	  CARDIOLOGISTA  - 15/03/2023 - R$ 200,00
 
-//        Paciente paciente = new Paciente();
-//        System.out.println(paciente.agendarConsulta("cardio",
-//                999, "Unimed")
-//        );
 
-//        Scanner sc= new Scanner(System.in);
-       List<String> especialidades = Arrays.asList("pediatra",
-               "cardiologista",
-               "dermatologista",
-               "tocador de zabumba",
-               "afinador de caavaquinho",
-               "pneumologista");
-
-    //    System.out.println(especialidades.get(1));
-
+        List<String> especialidades = Arrays.asList("pediatra",
+                "cardiologista",
+                "dermatologista",
+                "tocador de zabumba",
+                "cardiologista",
+                "dermatologista",
+                "tocador de zabumba",
+                "afinador de caavaquinho",
+                "pneumologista");
+//        List<NaoConveniado> naoConveniadoList = new ArrayList<>();
+        List<String> usuarios = Arrays.asList("Julio Renan Cardoso",
+                "Benedito Nathan Rodrigo Baptista",
+                "Sebastião Jorge Manoel Sales",
+                "Osvaldo Sérgio Joaquim Ramos",
+                "Ryan Marcos Vinicius Silva");
+//
+//
         for (int x = 0; x < 5; x++) {
             if (x % 2 == 0) {
-                for (int i = 0; i < 2; i++) {
-                    NaoConveniado naoConveniado = new NaoConveniado("ANA PAULA SÁ DA SILVA");
-                    naoConveniado.agendarConsulta(especialidades.get(1), "SEM CONVÊNIO");
-                }
+                NaoConveniado naoConveniado = new NaoConveniado(usuarios.get(x));
+                System.out.println(naoConveniado.agendarConsulta(especialidades.get(x),""));
+                //NaoConveniado naoConveniado2 = new NaoConveniado(usuarios.get(x));
+                int z = 1;
+                System.out.println("Segunda consulta: " +
+                        naoConveniado.agendarConsulta(especialidades.get(z),""));
+                z++;
+                System.out.println("---------------------------------------------");
             } else {
                 for (int i = 2; i < 4; i++) {
-                    Conveniado conveniado = new Conveniado("ANA MARIA DIAS DANTAS");
-                    conveniado.agendarConsulta(especialidades.get(i), "UNIMED");
+                    Conveniado conveniado = new Conveniado(usuarios.get(i));
+                    int z = 1;
+                    System.out.println(conveniado.agendarConsulta(especialidades.get(i),
+                            "UNIMED"));
+
+
+                    System.out.println("Segunda consulta: " +
+                            conveniado.agendarConsulta(especialidades.get(z),""));
+                    z++;
+                    System.out.println("---------------------------------------------");
                 }
             }
         }
+
 
     }
 }
