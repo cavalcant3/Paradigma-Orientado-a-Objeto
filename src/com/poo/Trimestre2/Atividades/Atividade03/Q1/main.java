@@ -43,7 +43,7 @@ public class main {
 
 
                     System.out.println("Segunda consulta: " +
-                            conveniado.agendarConsulta(especialidades.get(z),""));
+                            conveniado.agendarConsulta(especialidades.get(z),"UNIMED"));
                     z++;
                     System.out.println("---------------------------------------------");
 
